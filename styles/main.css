@@ -68,6 +68,7 @@ body {
    color: rgb(233,50,117);
    background-color: #fff;
  }
+ 
 
 /* Medium and small screens-------------------*/
 @media (min-width: 640px) {
