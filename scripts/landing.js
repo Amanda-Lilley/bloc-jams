@@ -13,24 +13,24 @@ var spinMe = function() {
   $.each($('.ion'), spinIcons);
 };
 
-spinMe();
 
 
 
 
-$(window).load = function() {
+
+$(window).load(function() {
 
   if ($(window).height > 950) {
-    spinIcons();
+    spinMe();
   }
   var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
 
   $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollDistance) {
-      spinIcons();
+      spinMe();
     }
   });
-}
+});
 
 
 
